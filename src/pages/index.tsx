@@ -7,6 +7,14 @@ import uuidv4 from 'utils/uuid'
 import exploreData from 'data/exploreData.json'
 import liveAnywhereData from 'data/liveAnywhereData.json'
 import MediumCard from '@src/components/MediumCard'
+import LargeCard from '@src/components/LargeCard'
+
+const largeCardData = {
+  img: '/images/banner1.webp',
+  title: 'Try hoisting',
+  description: 'Earn extra income and unlock new opportunities by sharing your space.',
+  buttonText: 'Learn more',
+}
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +37,9 @@ const Home: NextPage = () => {
               <MediumCard key={uuidv4()} data={item} />
             ))}
           </div>
+        </section>
+        <section>
+          <LargeCard data={largeCardData} />
         </section>
       </main>
     </div>
