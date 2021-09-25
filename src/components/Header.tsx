@@ -1,13 +1,15 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { GlobeAltIcon, MenuIcon, SearchIcon, UserCircleIcon } from '@heroicons/react/solid'
+import Logo from './Logo'
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5 md:px-10">
       {/* Logo  */}
-      <div className="relative flex items-center h-10 cursor-pointer my-auto">
-        <Image src="/images/Airbnb_Logo.png" layout="fill" objectFit="contain" objectPosition="left" />
+      <div className="relative flex items-center h-10 cursor-pointer my-auto text-red-400">
+        <Logo />
+        {/* <Image src="/images/Airbnb_Logo.png" layout="fill" objectFit="contain" objectPosition="left" /> */}
       </div>
       {/* Search  */}
       <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
