@@ -8,6 +8,7 @@ import exploreData from 'data/exploreData.json'
 import liveAnywhereData from 'data/liveAnywhereData.json'
 import MediumCard from '@src/components/MediumCard'
 import LargeCard from '@src/components/LargeCard'
+import Footer from '@src/components/Footer'
 
 const largeCardData = {
   img: '/images/banner1.webp',
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
           <LargeCard data={largeCardData} />
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

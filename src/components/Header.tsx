@@ -22,7 +22,7 @@ const Header = () => {
       </div>
       {/* Right side  */}
       <div className="flex items-center justify-end space-x-4 text-gray-500">
-        <p className="hidden md:inline-flex py-3 px-5 rounded-full hover:bg-gray-100 cursor-pointer">Become a host</p>
+        <p className="hidden lg:inline-flex py-3 px-5 rounded-full hover:bg-gray-100 cursor-pointer">Become a host</p>
         <GlobeAltIcon className="h-12 p-3 text-gray-600 hover:bg-gray-100 rounded-full cursor-pointer" />
         <div className="flex items-center space-x-2 p-2 cursor-pointer hover:shadow-lg border-2 rounded-full">
           <MenuIcon className="h-5 text-gray-600 " />
